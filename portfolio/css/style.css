@@ -1193,12 +1193,12 @@ footer{
 		letter-spacing: 3px;
 	}
 	.wthree-about-section-grid {
-		width: 25%;
+		width: 20%;
 		float: left;
 	}
 	.wthree-about-section-grid:nth-child(3) {
-		width:25%;
-		margin-top:5%;
+		width:20%;
+		float: left;
 	}
 	.team-w3ls-row {
 		width: 66%;
