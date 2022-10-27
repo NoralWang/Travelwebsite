@@ -799,6 +799,7 @@ img.readmore {
 /*-- contact --*/
 .contact-section{
 	padding: 70px 0;
+	background: #272727;
 }
 .contact-section-head h3 {
 	color:#ffffff;
