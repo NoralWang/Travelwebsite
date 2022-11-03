@@ -2,7 +2,75 @@
 <html lang="en">
 <head>
 <meta name="yandex-verification" content="693ce0d352759c8f" />
-<title>Home</title>     
+<title>Home</title>  
+	<style>
+#submit{
+width: 190px;
+height: 50px
+border: 3px soild;
+border-radius: 3px;
+padding: 5px;
+background-color: yellowgreen;
+}
+
+#clear{
+width: 140px;
+height :50px;
+border: 3px solid gray;
+	border-radius: 3px;
+	padding: 5px;
+	background-color: gray;
+}
+
+.formstyle
+{
+width: 600px;
+height: 200px;
+border: 3px solid skyblue;
+border-radius: 5px;
+}
+
+#price
+{
+width: 150px;
+height:50px;
+background-color: white;
+color: black ;
+border: 1px solid gray;
+	border-radius: 5px;
+	margin: 5px;
+	font-size: 10px;
+}
+
+input
+{
+width :  50px;
+height : 50px;
+background-color: white;
+color: black ;
+border: 1px solid gray;
+	border-radius: 5px;
+	margin: 5px;
+	font-size: 10px;
+}
+
+
+#calc{
+width: 90px;
+height :50px;
+border: 1px solid ;
+	border-radius: 3px;
+	margin: auto;
+}
+#calc2{
+width: 130px;
+height:50px;
+border: 1px solid gray;
+border-radius: 5px;
+margin: 5px;
+}
+
+</style>
 <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all" /><!-- fontawesome -->         
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" /><!-- Bootstrap stylesheet -->
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" /><!-- stylesheet -->
@@ -164,8 +232,26 @@
 					<div class="col-md-6 special-right">
 						<div class="sp-wid">
 							<h4>Books are the plane, and the train, and the road. They are the destination, and the Road trip. They are home.</h4>
-							<p>Travel is fatal to prejudice, bigotry, and narrow-mindedness, and many of our people need it sorely on these accounts. Broad, wholesome, charitable views of men and things cannot be acquired by vegetating in one little corner of the earth all one's lifetime </p>
-						</div>
+							<div class="formstyle">
+<form name="form1">
+	
+	<!-- This input box shows the button pressed by the user in calculator. -->
+   <br> <br>
+
+    <input type="button" value="-" onclick="form1.answer.value= eval(form1.answer.value)-1;form1.total.value= eval(form1.total.value)-25 ">
+   <input id="calc" value="0" type="text" name="answer">
+   <input type="button" value="+" onclick="form1.answer.value= eval(form1.answer.value)+1;form1.total.value= eval(form1.total.value)+25 ">
+    
+    <input name="total" type="text" value="25" id="calc2">
+    <br>
+   <input name="submit" value="submit" type="button" id="submit">
+  
+  <!-- Display the Cancel button and erase all data entered by the user. -->
+  <input type="button" value="Clear All" onclick="form1.answer.value = '0 '; form1.total.value = '0'" id="clear">
+  <br> 
+  
+</form>
+</div></div>
 					</div>
 					<div class="clearfix"></div>
 				</div>
