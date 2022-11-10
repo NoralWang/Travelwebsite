@@ -310,7 +310,7 @@ function myPrice3() {
     <input name="single" type="text" value="0" id="calc1">
 	<input name="total" type="text" value="0" id="calc2">
     <br>
-   <input name="submit" value="submit" type="button" id="submit">
+   <input name="submit" value="submit" type="button" id="submit" onclick="{ if(confirm('Pay？'))location.href='price.html'}">
   
   <!-- Display the Cancel button and erase all data entered by the user. -->
   <input type="button" value="Clear All" onclick="form1.answer.value = '0 '; form1.total.value = '0';form1.single.value=0" id="clear">
