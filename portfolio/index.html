@@ -12,7 +12,39 @@ border-radius: 3px;
 padding: 5px;
 background-color: yellowgreen;
 }
-
+ #price1
+{
+width: 31%;
+height:50px;
+background-color: orange;
+color: black ;
+border: 1px solid gray;
+	border-radius: 5px;
+	margin: 5px;
+	font-size: 10px;
+}
+#price2
+{
+width: 31%;
+height:50px;
+background-color: orange;
+color: black ;
+border: 1px solid gray;
+	border-radius: 5px;
+	margin: 5px;
+	font-size: 10px;
+}
+#price3
+{
+width: 31%;
+height:50px;
+background-color: orange;
+color: black ;
+border: 1px solid gray;
+	border-radius: 5px;
+	margin: 5px;
+	font-size: 10px;
+}
 #clear{
 width: 140px;
 height :50px;
@@ -229,9 +261,35 @@ margin: 5px;
 								</figcaption>			
 						 </figure>
 						<form name="form2">
-   <input type="button" value="Price : 25 $" id="price">
+ <input type="button" value="Train:10 $" id="price1" onclick="myPrice1()">
+ <input type="button" value="Car:25$" id="price2" onclick="myPrice2()">
+  <input type="button" value="Plan:125$" id="price3" onclick="myPrice3()">
 <br>
 </form>
+
+<script>
+function myPrice1() {
+
+  form1.answer.value = '0';
+  form1.total.value = '0';
+  form1.single.value='0' ;
+    form1.single.value="10";
+}
+function myPrice2() {
+
+    form1.answer.value = '0';
+  form1.total.value = '0';
+  form1.single.value='0' ;
+    form1.single.value="25";
+}
+function myPrice3() {
+
+    form1.answer.value = '0';
+  form1.total.value = '0';
+  form1.single.value='0' ;
+    form1.single.value="125";
+}
+</script>
 					</div>
 					<div class="col-md-6 special-right">
 						<div class="sp-wid">
@@ -242,19 +300,33 @@ margin: 5px;
 	<!-- This input box shows the button pressed by the user in calculator. -->
    <br> <br>
 
-    <input type="button" value="-" onclick="form1.answer.value= eval(form1.answer.value)-1;form1.total.value= eval(form1.total.value)-25 ">
-   <input id="calc" value="0" type="text" name="answer">
-   <input type="button" value="+" onclick="form1.answer.value= eval(form1.answer.value)+1;form1.total.value= eval(form1.total.value)+25 ">
+    <input type="button" value="-" onclick="form1.answer.value= eval(form1.answer.value)-1;form1.total.value= eval(form1.total.value)-form1.single.value ">
     
-    <input name="total" type="text" value="0" id="calc2">
+   <input id="calc" value="0" type="text" name="answer">
+   
+   <input type="button" value="+" onclick="totalP()">
+    
+    
+    <input name="single" type="text" value="0" id="calc1">
+	<input name="total" type="text" value="0" id="calc2">
     <br>
    <input name="submit" value="submit" type="button" id="submit">
   
   <!-- Display the Cancel button and erase all data entered by the user. -->
-  <input type="button" value="Clear All" onclick="form1.answer.value = '0 '; form1.total.value = '0'" id="clear">
+  <input type="button" value="Clear All" onclick="form1.answer.value = '0 '; form1.total.value = '0';form1.single.value=0" id="clear">
   <br> 
+  </form>
   
-</form>
+  
+<script>
+function totalP() {
+  if (form1.single.value!=0){
+  form1.answer.value=eval(form1.answer.value)+1;
+  form1.total.value=eval(form1.answer.value)*form1.single.value 
+  }
+}
+
+</script>
 </div></div>
 					</div>
 					<div class="clearfix"></div>
