@@ -102,7 +102,7 @@ margin: 5px;
 
 </style>
 <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all"><!-- fontawesome -->         
-<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all"><!-- Bootstrap stylesheet -->
+
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all"><!-- stylesheet -->
 <!-- meta tags -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -110,28 +110,10 @@ margin: 5px;
 <meta name="keywords" content="TravelMinsk">
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- //meta tags -->
-<!--fonts-->
-<link href="http://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=latin-ext" rel="stylesheet">
-<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
-<!--//fonts-->
-<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script><!-- Required-js -->
-<script src="js/bootstrap.min.js"></script><!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<link rel="stylesheet" type="text/css" href="css/component.css"><!-- css for banner slider -->
-<script src="js/modernizr.custom.js"></script><!-- js required for banner slider -->
-<link rel="stylesheet" href="css/colorbox.css"><!-- css for Gallery -->
-<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-TEHYRWWDQP"></script><script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-TEHYRWWDQP');
-</script></head>
-<!-- Google tag (gtag.js) -->
-
-
-<body>
-	
-<div style="color:#000000;">and more...</div>
+  </head><body style="
+    background: #00000000;
+">
 					
 					<div class="clearfix"></div>
 				
@@ -143,18 +125,20 @@ margin: 5px;
 		<div class="agileits-w3layouts-specials" id="agileits-specials">
 			<h3>OUR SPECIALS</h3>
 			<span></span>
-				<div class="special-grids">
-					<div class="col-md-6 special-left l-grids">
+				<div class="special-grids" style="
+    background: #f7f7f7;
+">
+					<div class="col-md-6 special-left l-grids" style="
+    height: 10%;
+    width: 40%;
+    float: left;
+    margin-left: 5%;
+">
 						 <figure class="effect-bubba">
-								<img src="images/4.jpg" alt="" height="200" width="200">
+								<img src="images/4.jpg" alt="">
 									
 						 </figure>
-						<form name="form2">
- <input type="button" value="Train:10 $" id="price1" onclick="myPrice1()">
- <input type="button" value="Car:25$" id="price2" onclick="myPrice2()">
-  <input type="button" value="Plan:125$" id="price3" onclick="myPrice3()">
-<br>
-</form>
+						
 
 <script>
 function myPrice1() {
@@ -180,14 +164,25 @@ function myPrice3() {
 }
 </script>
 					</div>
-					<div class="col-md-6 special-right">
+					<div class="col-md-6 special-right" style="
+    float: right;
+    width: 40%;
+    height: 8%;
+    margin-right: 5%;
+    background: #00000000;
+">
 						<div class="sp-wid">
-							<h4>Books are the plane, and the train, and the road. They are the destination, and the Road trip. They are home.</h4>
 							<div class="formstyle">
+							<br> 
+    <form name="form2">
+ <input type="button" value="Train:10 $" id="price1" onclick="myPrice1()">
+ <input type="button" value="Car:25$" id="price2" onclick="myPrice2()">
+  <input type="button" value="Plan:125$" id="price3" onclick="myPrice3()">
+
+</form>
+<br> 
+<br> 
 <form name="form1">
-	
-	<!-- This input box shows the button pressed by the user in calculator. -->
-   <br> <br>
 
     <input type="button" value="-" onclick="form1.answer.value= eval(form1.answer.value)-1;form1.total.value= eval(form1.total.value)-form1.single.value ">
     
@@ -199,6 +194,7 @@ function myPrice3() {
     <input name="single" type="text" value="0" id="calc1" style="display:line">
 	<input name="total" type="text" value="0" id="calc2">
     <br>
+	<br> 
    <input name="submit" value="submit" type="button" id="submit" onclick="{if(confirm('Make Sure To Pay'))}">
   
   <!-- Display the Cancel button and erase all data entered by the user. -->
@@ -218,7 +214,7 @@ function totalP() {
 </script>
 </div></div>
 					</div>
-					<div class="clearfix"></div>
+					
 				</div>
 				
 				
