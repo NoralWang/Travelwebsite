@@ -206,18 +206,55 @@ margin: 5px;
 				<div class="about-section-grids">
 					<div class="col-md-4 wthree-about-section-grid">
 						 <a href="https://site-travelminsk-noral.mystrikingly.com/">
-						<img src="images/abt_pic.jpg" alt="">
+								<img id="slide_photo" src="images/abt_pic.jpg">
         </a>
+		<script language =javascript >
+ 
+var i=0;//图片索引
+var arr=new Array();    //图片列表
+ 
+arr[0]="images/t1.jpg";
+arr[1]="images/t1.jpg";
+arr[2]="images/t2.jpg";
+arr[3]="images/t3.jpg";
+
+ 
+ 
+function slide_photos()
+{
+    var photo=document.getElementById("slide_photo");
+    if (i==arr.length-1) 
+    {
+        i=0;
+    }
+    else
+    {
+        i+=1;
+    }
+    photo.src=arr[i];    //直接定义图片
+}
+ 
+//重新加载的时间
+setInterval("slide_photos()",2000);
+ 
+</script>
 					</div>
 					<div class="col-md-4 wthree-about-section-grid">
-						<h5>Heading goes here</h5>
-						<p>Travel is the movement </p>
-						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy 
-							text of the printing and typesetting industry. Lorem Ipsum has been the industry
-							's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scra
-							mbled it to make a type specimen book. It has survived n
-							ot only five centuries, but also the leap into electronic typesetting. .</p>
+						<h5>Our Team is professional</h5>
+						<p>The company is mainly engaged in inbound,
+						outbound, passenger transport, air ticket agency and tourism-rela
+						ted businesses.The company is mainly 
+						engaged in the tourism industry, "quality service, reputation first" is the foundation of the company, 
+						and "strict management, benefit first" is the company's business philosophy.</p>
 					</div>
+					<div class="col-md-4 wthree-about-section-grid">
+						<h5>The company's main business scope:</h5>
+						<p>1. Outbound tourism business: the company has five advantages in outbound tourism:
+						personnel quality advantages, ground 
+						connection service advantages, and consular visa delivery advantages.<br>
+2. Inbound tourism business<br>
+3. Domestic tourism business At present, hundreds
+ of mature tourist routes have been successfully.<br></p>
     <div class="col-md-4 wthree-about-section-grid">
 						<img src="images/classadd.jpg" alt="">
 					</div>
