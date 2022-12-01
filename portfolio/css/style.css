@@ -821,6 +821,7 @@ img.readmore {
 }
 .agileits-map{
 	width:59%;
+	margin:0 auto;
 }
 .agileits-map iframe{
 	min-height:330px;
