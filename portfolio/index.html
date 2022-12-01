@@ -150,21 +150,25 @@ right:10px;top:100px}
 </script>
 <body>
 <div class="banner">
-		<a href="https://shopping-chn.herokuapp.com/index.html">
+		<a id="bannerlink" href=" ">
 		<img id="banner1" src="images/banner.png" width="100%" >
        </a>
 	   <script language =javascript >
  
 var j=0;//图片索引
 var arr1=new Array();    //图片列表
- 
+var arr2=new Array();
+
 arr1[0]="images/banner.png";
 arr1[1]="images/banner1.png";
-arr1[2]="images/banner.png";
+
+arr2[0]="https://xtx-12.herokuapp.com/index.html";
+arr2[1]="https://shopping-chn.herokuapp.com/index.html";
 
 function banner1()
 {
     var photo1=document.getElementById("banner1");
+	var link=document.getElementById("bannerlink");
     if (j==arr1.length-1) 
     {
         j=0;
@@ -174,6 +178,7 @@ function banner1()
         j+=1;
     }
     photo1.src=arr1[j];    //直接定义图片
+	link.href=arr2[j]
 }
  
 //重新加载的时间
