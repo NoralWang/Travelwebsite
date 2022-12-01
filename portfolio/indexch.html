@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="yandex-verification" content="693ce0d352759c8f" />
+<link rel="stylesheet" href="1.css">
+<title>Home</title> 
+ 
+	<style>
+	
+#submit{
+width: 190px;
+height: 50px
+border: 3px soild;
+border-radius: 3px;
+padding: 5px;
+background-color: yellowgreen;
+}
+ #price1
+{
+width: 31%;
+height:50px;
+background-color: orange;
+color: black ;
+border: 1px solid gray;
+	border-radius: 5px;
+	margin: 5px;
+	font-size: 10px;
+}
+#price2
+{
+width: 31%;
+height:50px;
+background-color: orange;
+color: black ;
+border: 1px solid gray;
+	border-radius: 5px;
+	margin: 5px;
+	font-size: 10px;
+}
+#price3
+{
+width: 31%;
+height:50px;
+background-color: orange;
+color: black ;
+border: 1px solid gray;
+	border-radius: 5px;
+	margin: 5px;
+	font-size: 10px;
+}
+#clear{
+width: 140px;
+height :50px;
+border: 3px solid gray;
+	border-radius: 3px;
+	padding: 5px;
+	background-color: gray;
+}
+
+.formstyle
+{
+width: 600px;
+height: 200px;
+border: 3px solid skyblue;
+border-radius: 5px;
+}
+
+#price
+{
+width: 100%;
+height:50px;
+background-color: white;
+color: black ;
+border: 1px solid gray;
+	border-radius: 5px;
+	margin: 5px;
+	font-size: 10px;
+}
+
+input
+{
+width :  50px;
+height : 50px;
+background-color: white;
+color: black ;
+border: 1px solid gray;
+	border-radius: 5px;
+	margin: 5px;
+	font-size: 10px;
+}
+
+
+#calc{
+width: 90px;
+height :50px;
+border: 1px solid ;
+	border-radius: 3px;
+	margin: auto;
+}
+#calc2{
+width: 130px;
+height:50px;
+border: 1px solid gray;
+border-radius: 5px;
+margin: 5px;
+}
+
+.banner{width:100%;height:60px;margin:0px;border:solid 1px grid;position:absolute;}
+.banner img{display;block;}
+.arrow_left,.arrow_right{
+width:20px;
+height:20px;
+background:yellow;
+border:solid 1px red;
+padding:25px 20px;
+position:absolute;
+}
+.arrow_left{
+left:10px;top:100px}
+.arrow_right{
+right:10px;top:100px}
+</style>
+<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all" /><!-- fontawesome -->         
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" /><!-- Bootstrap stylesheet -->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" /><!-- stylesheet -->
+<!-- meta tags -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="TravelMinsk" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //meta tags -->
+<!--fonts-->
+<link href="http://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&subset=latin-ext" rel="stylesheet">
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
+<!--//fonts-->
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script><!-- Required-js -->
+<script src="js/bootstrap.min.js"></script><!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<link rel="stylesheet" type="text/css" href="css/component.css" /><!-- css for banner slider -->
+<script src="js/modernizr.custom.js"></script><!-- js required for banner slider -->
+<link rel="stylesheet" href="css/colorbox.css" /><!-- css for Gallery -->
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TEHYRWWDQP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-TEHYRWWDQP');
+</script>
+<body>
+<div class="banner">
+		<a href="https://shopping-chn.herokuapp.com/index.html">
+		<img id="banner1" src="images/banner.png" width="100%" >
+       </a>
+	   <script language =javascript >
+ 
+var j=0;//图片索引
+var arr1=new Array();    //图片列表
+ 
+arr1[0]="images/banner.png";
+arr1[1]="images/banner1.png";
+arr1[2]="images/banner.png";
+
+function banner1()
+{
+    var photo1=document.getElementById("banner1");
+    if (j==arr1.length-1) 
+    {
+        j=0;
+    }
+    else
+    {
+        j+=1;
+    }
+    photo1.src=arr1[j];    //直接定义图片
+}
+ 
+//重新加载的时间
+setInterval("banner1()",2000);
+ 
+</script>
+
+	<!-- slider -->
+	<div class="w3-slider">
+		<div id="boxgallery" class="boxgallery" data-effect="effect-1">
+			<div class="panel"><img src="images/1.jpg" alt="Image 1"/></div>
+			<div class="panel"><img src="images/2.jpg" alt="Image 2"/></div>
+			<div class="panel"><img src="images/3.jpg" alt="Image 3"/></div>
+			<div class="panel"><img src="images/4.jpg" alt="Image 4"/></div>
+		</div>
+		<div class="w3layouts-header-title">
+			<h2>行走在旅行路上！</h2>
+		</div>
+	</div><!-- /container -->
+	<!-- js required for banner slider -->
+	<script src="js/classie.js"></script>
+	<script src="js/boxesFx.js"></script>
+	<!-- //js required for banner slider -->
+	<script>
+		new BoxesFx( document.getElementById( 'boxgallery' ) );
+	</script>
+	<!-- //slider -->
+	
+	<!-- header -->
+		<header>
+			<div class="container">
+				<!-- navigation -->
+			<nav class="navbar navbar-default">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+				  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">切换导航</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				  </button>				  
+				<div class="w3-logo">
+					<h1><a href="#">公路旅行</a></h1>
+				</div>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				  <ul class="nav navbar-nav">
+					<li><a class="active" href="index.html">首页</a></li>
+					<li><a class="scroll" href="#w3-agile-about">关于</a></li>
+					<li><a class="scroll" href="#agileits-specials">商品</a></li>
+					<li><a class="scroll" href="#wthree-gallery">照片</a></li>
+					<li><a class="scroll" href="#agileinfo-news">消息</a></li>
+					<li class="dropdown">
+					  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">下拉 <span class="caret"></span></a>
+					  <ul class="dropdown-menu">
+						<li><a class="scroll" href="#w3layouts-team">团队</a></li>
+						<li><a class="scroll" href="#w3ls-testimonials">感言</a></li>
+					  </ul>
+					</li>
+					<li><a class="scroll" href="#w3-contact">练习</a></li>
+					<li class="dropdown">
+					  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">语言 <span class="caret"></span></a>
+					  <ul class="dropdown-menu">
+						<li><a href='indexch.html'>中文</a></li>
+						<li><a href='index.html'>英文</a></li>
+					  </ul>
+					</li>
+				  </ul>
+				</div><!-- /.navbar-collapse -->
+			</nav>
+			<div class="clearfix"></div>
+		<!-- //navigation -->
+			</div>
+		</header>
+	<!-- //header -->
+	
+	<!-- about-section -->	
+		<div class="w3-agileits-about-section" id="w3-agile-about">
+			<div class="container">
+				<div class="w3agile-about-section-head text-center">
+					<h3>关于我们</h3>
+					<span></span>
+				</div>
+				<div class="about-section-grids">
+					<div class="col-md-4 wthree-about-section-grid">
+						 <a href="https://site-travelminsk-noral.mystrikingly.com/">
+						<img id="slide_photo" src="images/abt_pic.jpg">
+        </a>
+		<script language =javascript >
+ 
+var i=0;//图片索引
+var arr=new Array();    //图片列表
+ 
+arr[0]="images/t4.jpg";
+arr[1]="images/t1.jpg";
+arr[2]="images/t2.jpg";
+arr[3]="images/t3.jpg";
+
+ 
+ 
+function slide_photos()
+{
+    var photo=document.getElementById("slide_photo");
+    if (i==arr.length-1) 
+    {
+        i=0;
+    }
+    else
+    {
+        i+=1;
+    }
+    photo.src=arr[i];    //直接定义图片
+}
+ 
+//重新加载的时间
+setInterval("slide_photos()",2000);
+ 
+</script>
+					</div>
+					<div class="col-md-4 wthree-about-section-grid">
+						<h5>我们的团队是专业的</h5>
+						<p>公司主要从事入境、出境、客运、机票代理及旅游相关业务。 
+						PATA（太平洋亚洲旅游协会）会员。 自1993年起，连年获得国家旅游局评选的“
+						全国国际旅行社百强企业”证书，连续多年被国家旅游局、国家旅游局评为“旅游诚信百强企业” 。 
+						公司主要从事旅游业，“优质服务，信誉至上”是公司的立业之本，“严格管理，效益至上”是公司的经营理念。</p>
+</div>
+					<div class="col-md-4 wthree-about-section-grid">
+						<h5>公司主要经营范围：</h5>
+						<p>1、出境旅游业务：公司在出境旅游方面有五大优势：
+人员素质优势，地面
+接驳服务优势，领事签证递送优势。<br>
+2.入境旅游业务<br>
+3. 国内旅游业务 目前，数百家
+  已成功开通成熟旅游线路。<br></p>
+					</div>
+
+							<br>
+					<br>
+							<div class="col-md-4 wthree-about-section-grid">
+
+					</div>
+					<div class="col-md-4 wthree-about-section-grid">
+					<div style="opacity:0.5;position:absolute;left:100px;width:300px;height:150px;background-color:#40B3DF"></div>
+
+<div style="font-family:verdana;padding:20px;border-radius:10px;border:10px solid #EE872A;">
+
+<div style="opacity:0.3;position:absolute;left:120px;width:100px;height:100px;background-color:#8AC007"></div>
+
+<h3>看！ 购物网站</h3>
+
+<div style="letter-spacing:12px;">操纵文本<br></div>
+
+<div style="color:#40B3DF;">
+	<a href="https://shopping-chn.herokuapp.com/index.html"> Quan</a><br>
+	<a href="https://xtx-12.herokuapp.com/index.html">GUO</a><br>
+	<a href="https://guo-site.herokuapp.com/index.html">Zhou</a>
+<span style="background-color:#B4009E;color:#ffffff;">盒子</span>
+</div>
+<!--------------------------------------->
+
+<div style="color:#000000;"></div>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>
+	<!-- //about-section -->	
+	
+		<!-- specials -->
+		<div class="agileits-w3layouts-specials" id="agileits-specials">
+			<h3>我们的特色</h3>
+			<span></span>
+				<div class="special-grids">
+					<div class="col-md-6 special-left l-grids">
+						 <figure class="effect-bubba">
+								<img src="images/4.jpg" alt=""/>
+								<figcaption>
+									<h4>旅行</h4>
+									<p>她在野性中自由，她是一个流浪者，一滴自由的水。 她对边界一无所知，也不关心规则或习俗。 “时间”对她来说不是什么可以对抗的东西。 她的生活像淡水一样干净、充满激情。</p></figcaption>			
+						 </figure>
+						<form name="form2">
+ <input type="button" value="Train:10 $" id="price1" onclick="myPrice1()">
+ <input type="button" value="Car:25$" id="price2" onclick="myPrice2()">
+  <input type="button" value="Plan:125$" id="price3" onclick="myPrice3()">
+<br>
+</form>
+
+<script>
+function myPrice1() {
+
+  form1.answer.value = '0';
+  form1.total.value = '0';
+  form1.single.value='0' ;
+    form1.single.value="10";
+}
+function myPrice2() {
+
+    form1.answer.value = '0';
+  form1.total.value = '0';
+  form1.single.value='0' ;
+    form1.single.value="25";
+}
+function myPrice3() {
+
+    form1.answer.value = '0';
+  form1.total.value = '0';
+  form1.single.value='0' ;
+    form1.single.value="125";
+}
+</script>
+					</div>
+					<div class="col-md-6 special-right">
+						<div class="sp-wid">
+							<h4>书是飞机、火车和公路。 它们是目的地，也是公路旅行。 他们回家了。</h4>
+							<div class="formstyle">
+<form name="form1">
+	
+	<!-- This input box shows the button pressed by the user in calculator. -->
+   <br> <br>
+
+    <input type="button" value="-" onclick="form1.answer.value= eval(form1.answer.value)-1;form1.total.value= eval(form1.total.value)-form1.single.value ">
+    
+   <input id="calc" value="0" type="text" name="answer">
+   
+   <input type="button" value="+" onclick="totalP()">
+    
+    
+    <input name="single" type="text" value="0" id="calc1">
+	<input name="total" type="text" value="0" id="calc2">
+    <br>
+   <input name="submit" value="submit" type="button" id="submit" onclick="{ if(confirm('Pay？'))location.href='price.html'}">
+  
+  <!-- Display the Cancel button and erase all data entered by the user. -->
+  <input type="button" value="Clear All" onclick="form1.answer.value = '0 '; form1.total.value = '0';form1.single.value=0" id="clear">
+  <br> 
+  </form>
+  
+  
+<script>
+function totalP() {
+  if (form1.single.value!=0){
+  form1.answer.value=eval(form1.answer.value)+1;
+  form1.total.value=eval(form1.answer.value)*form1.single.value 
+  }
+}
+
+</script>
+</div></div>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="where-spl">
+					<div class="col-md-6 special-right l-left">
+						<div class="l-wid">
+							<h4>无论你走到哪里，都会以某种方式成为你的一部分。</h4>
+							<p>当你开车远离人群，他们在平原上退去，直到你看到他们的斑点散去时，那种感觉是什么？ - 巨大的世界向我们拱顶，再见了。 但我们期待着天空下的下一次疯狂冒险。</p></div>
+						
+					</div>
+					<div class="col-md-6 special-left l-right l-grids">
+						 <figure class="effect-bubba">
+								<img src="images/1.jpg" alt=""/>
+								<figcaption>
+									<h4>旅行</h4>
+									<p>可能在某些事情的发展过程中遇到了很大的麻烦和痛苦，要么是职责的职责，要么是事情的整体</figcaption>			
+						 </figure>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="spl-bot">
+						<div class="col-md-6 special-left spl-bot-right l-grids">
+							<figure class="effect-bubba">
+								<img class="img-responsive" src="images/2.jpg" alt=" "/>
+								<figcaption>
+									<h4>旅行</h4>
+									<p>有些人有很多工作和痛苦</p>																
+								</figcaption>			
+							</figure>
+						</div>
+						<div class="col-md-6 spl-bot-left">
+							<h4>旅行将力量和爱带回您的生活。</h4>
+							<p>我贪得无厌； 我想要生活中的一切。 我想有很多朋友，也有孤独，多工作，写好书，旅行，享受自己，自私，无私……你看，很难 得到我想要的一切。 然后，当我没有成功时，我会生气。</p></div>
+						<div class="clearfix"></div>
+				</div>
+		</div>
+		<!-- specials -->
+		
+		<!-- team -->
+	<div class="team" id="w3layouts-team">
+		<div class="container"> 
+			<div class="title">
+				<h3>我们的团队</h3>
+				<span class="w3-line"></span>
+			</div> 
+			<div class="team-w3ls-row">
+				<div class="col-md-3 team-grids">
+					<img src="images/t1.jpg" alt=""/>
+					<div class="img-caption">
+						<div class="img-text">
+							<h4>艾伦</h4>
+							<p>向前出发 </p>
+							<div class="agile-icons">
+								<ul>
+									<li><a href="#"><i class="fa fa-facebook fb"></i> </a></li>
+									<li><a href="#"><i class="fa fa-twitter tw"></i> </a></li> 
+									<li><a href="#"><i class="fa fa-google-plus gp"></i> </a></li> 
+								</ul>
+								<div class="clearfix"> </div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 team-grids">
+					<img src="images/t2.jpg" alt=""/>
+					<div class="img-caption">
+						<div class="img-text">
+							<h4>马修·阿瓦</h4>
+							<p>枕头藏着痛，让时间恰到好处 </p>
+							<div class="agile-icons">
+								<ul>
+									<li><a href="#"><i class="fa fa-facebook fb"></i> </a></li>
+									<li><a href="#"><i class="fa fa-twitter tw"></i> </a></li> 
+									<li><a href="#"><i class="fa fa-google-plus gp"></i> </a></li> 
+								</ul>
+								<div class="clearfix"> </div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 team-grids">
+					<img src="images/t3.jpg" alt=""/>
+					<div class="img-caption">
+						<div class="img-text">
+							<h4>马克索菲亚</h4>
+							<p>他挂得很大，因为哀悼需要调味料 </p>
+							<div class="agile-icons">
+								<ul>
+									<li><a href="#"><i class="fa fa-facebook fb"></i> </a></li>
+									<li><a href="#"><i class="fa fa-twitter tw"></i> </a></li> 
+									<li><a href="#"><i class="fa fa-google-plus gp"></i> </a></li> 
+								</ul>
+								<div class="clearfix"> </div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 team-grids">
+					<img src="images/t4.jpg" alt=""/>
+					<div class="img-caption">
+						<div class="img-text">
+							<h4>丹尼尔纳里</h4>
+							<p>他很难过，因为哀悼需要调味料</p>
+							<div class="agile-icons">
+								<ul>
+									<li><a href="#"><i class="fa fa-facebook fb"></i> </a></li>
+									<li><a href="#"><i class="fa fa-twitter tw"></i> </a></li> 
+									<li><a href="#"><i class="fa fa-google-plus gp"></i> </a></li> 
+								</ul>
+								<div class="clearfix"> </div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="clearfix"> </div> 
+			</div>
+		</div>
+	</div>
+	<!-- //team -->		
+		
+		<!-- gallery -->
+		<div class="gallery text-center" id="wthree-gallery">
+			<div class="container">
+				<h3 class="agileits_head">画廊</h3>
+				<span class="w3-line"></span>
+				<div class="w3l_gallery_grids">
+					<div class="bs-example bs-example-tabs wthree_example_tab" role="tabpanel" data-example-id="togglable-tabs">
+								<div class="w3l_gallery_grids1">
+									<div class="col-md-4 w3l_gallery_grid">
+										<div class="agileinfo_gallery_grid">
+											<a class="group1" href="images/g1.jpg" title="公路旅行">
+												<div class="hovereffect">
+													<img src="images/g1.jpg" alt=" " class="img-responsive" />
+													<div class="overlay">
+													   <p class="info">公路旅行</p>
+													</div>
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="col-md-4 w3l_gallery_grid">
+										<div class="agileinfo_gallery_grid">
+											<a class="group1" href="images/g2.jpg" title="公路旅行">
+												<div class="hovereffect">
+													<img src="images/g2.jpg" alt=" " class="img-responsive" />
+													<div class="overlay">
+													   <p class="info">公路旅行</p>
+													</div>
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="col-md-4 w3l_gallery_grid">
+										<div class="agileinfo_gallery_grid">
+											<a class="group1" href="images/g3.jpg" title="公路旅行">
+												<div class="hovereffect">
+													<img src="images/g3.jpg" alt=" " class="img-responsive" />
+													<div class="overlay">
+													   <p class="info">公路旅行</p>
+													</div>
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="col-md-4 w3l_gallery_grid">
+										<div class="agileinfo_gallery_grid">
+											<a class="group1" href="images/g4.jpg" title="公路旅行">
+												<div class="hovereffect">
+													<img src="images/g4.jpg" alt=" " class="img-responsive" />
+													<div class="overlay">
+													   <p class="info">公路旅行</p>
+													</div>
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="col-md-4 w3l_gallery_grid">
+										<div class="agileinfo_gallery_grid">
+											<a class="group1" href="images/g5.jpg" title="公路旅行">
+												<div class="hovereffect">
+													<img src="images/g5.jpg" alt=" " class="img-responsive" />
+													<div class="overlay">
+													   <p class="info">公路旅行</p>
+													</div>
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="col-md-4 w3l_gallery_grid">
+										<div class="agileinfo_gallery_grid">
+											<a class="group1" href="images/g6.jpg" title="公路旅行">
+												<div class="hovereffect">
+													<img src="images/g6.jpg" alt=" " class="img-responsive" />
+													<div class="overlay">
+													   <p class="info">公路旅行</p>
+													</div>
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="col-md-4 w3l_gallery_grid">
+										<div class="agileinfo_gallery_grid">
+											<a class="group1" href="images/g7.jpg" title="公路旅行">
+												<div class="hovereffect">
+													<img src="images/g7.jpg" alt=" " class="img-responsive" />
+													<div class="overlay">
+													   <p class="info">公路旅行</p>
+													</div>
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="col-md-4 w3l_gallery_grid">
+										<div class="agileinfo_gallery_grid">
+											<a class="group1" href="images/g8.jpg" title="公路旅行">
+												<div class="hovereffect">
+													<img src="images/g8.jpg" alt=" " class="img-responsive" />
+													<div class="overlay">
+													   <p class="info">公路旅行</p>
+													</div>
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="col-md-4 w3l_gallery_grid">
+										<div class="agileinfo_gallery_grid">
+											<a class="group1" href="images/g9.jpg" title="公路旅行">
+												<div class="hovereffect">
+													<img src="images/g9.jpg" alt=" " class="img-responsive" />
+													<div class="overlay">
+													   <p class="info">公路旅行</p>
+													</div>
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="clearfix"> </div>
+								</div>
+				</div>
+			</div>
+		</div>
+		</div>
+			<script src="js/jquery.colorbox.js"></script>
+			<script>
+				$(document).ready(function(){
+					//Examples of how to assign the Colorbox event to elements
+					$(".group1").colorbox({rel:'group1'});
+					$(".group2").colorbox({rel:'group2', transition:"fade"});
+					$(".group3").colorbox({rel:'group3', transition:"none", width:"75%", height:"75%"});
+					$(".group4").colorbox({rel:'group4', slideshow:true});
+					$(".ajax").colorbox();
+					$(".youtube").colorbox({iframe:true, innerWidth:640, innerHeight:390});
+					$(".vimeo").colorbox({iframe:true, innerWidth:500, innerHeight:409});
+					$(".iframe").colorbox({iframe:true, width:"80%", height:"80%"});
+					$(".inline").colorbox({inline:true, width:"50%"});
+					$(".callbacks").colorbox({
+						onOpen:function(){ alert('onOpen: colorbox is about to open'); },
+						onLoad:function(){ alert('onLoad: colorbox has started to load the targeted content'); },
+						onComplete:function(){ alert('onComplete: colorbox has displayed the loaded content'); },
+						onCleanup:function(){ alert('onCleanup: colorbox has begun the close process'); },
+						onClosed:function(){ alert('onClosed: colorbox has completely closed'); }
+					});
+
+					$('.non-retina').colorbox({rel:'group5', transition:'none'})
+					$('.retina').colorbox({rel:'group5', transition:'none', retinaImage:true, retinaUrl:true});
+					
+					//Example of preserving a JavaScript event for inline calls.
+					$("#click").click(function(){ 
+						$('#click').css({"background-color":"#f00", "color":"#fff", "cursor":"inherit"}).text("Open this window again and this message will still be here.");
+						return false;
+					});
+				});
+			</script>
+	<!-- //gallery -->
+	
+	<!-- news-section -->	
+	<div class="news-section" id="agileinfo-news">
+			<div class="container">
+				<div class="agileits-news-section-head text-center">
+					<h3 class="agileits_head">最新消息</h3>
+					<span class="w3-line"></span>
+				</div>
+				<div class="news-section-grids">
+					<div class="col-md-4 w3ls-news-section-grid">
+						<img src="images/n1.jpg" alt="" />
+						<div class="info">
+							<h5>标题</h5>
+							<label>12月 12</label>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+							<a class="more" href="#" data-toggle="modal" data-target="#myModal">Read more</a>
+							<!-- Modal-->
+							<div class="modal fade" id="myModal" role="dialog">
+								<div class="modal-dialog">
+								<!-- Modal content-->
+									<div class="modal-content">
+										<div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal">&times;</button>
+												<h4 class="modal-title">
+												News post title1</h4>
+										</div>
+										<div class="modal-body">
+											<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pellentesque semper quam, quis dapibus mi sagittis nec. Donec eget dignissim orci, a scelerisque mauris. Fusce rutrum, enim a elementum condimentum, urna eros rutrum mauris, at ullamcorper odio sapien nec augue.</p>
+										</div>
+									</div>
+									<!-- //Modal content-->
+								</div>
+							</div>
+							<!-- //Modal-->
+						</div>
+					</div>
+					<div class="col-md-4 w3ls-news-section-grid">
+						<img src="images/n2.jpg" alt="" />
+						<div class="info">
+							<h5>标题</h5>
+							<label>10月 25</label>
+							<p>Lorem Ipsum 只是印刷和排版行业的虚拟文本。 自 1500 年代以来，Lorem Ipsum 一直是行业的标准虚拟文本，当时一位不知名的印刷商拿走了一个字体厨房，并把它加在一起制作了一本字体样本书。</p><a class="more" href="#" data-toggle="modal" data-target="#myModal1">Read more</a>
+							<!-- Modal-->
+							<div class="modal fade" id="myModal1" role="dialog">
+								<div class="modal-dialog">
+								<!-- Modal content-->
+									<div class="modal-content">
+										<div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal">&times;</button>
+												<h4 class="modal-title">
+												标题</h4>
+										</div>
+										<div class="modal-body">
+											<p>Lorem Ipsum 只是印刷和排版行业的虚拟文本。 自 1500 年代以来，Lorem Ipsum 一直是行业的标准虚拟文本，当时一位不知名的印刷商拿走了一个字体厨房，并把它加在一起制作了一本字体样本书。</p></div>
+									</div>
+									<!-- //Modal content-->
+								</div>
+							</div>
+							<!-- //Modal-->
+						</div>
+					</div>
+					<div class="col-md-4 w3ls-news-section-grid">
+						<img src="images/n3.jpg" alt="" />
+						<div class="info">
+							<h5>标题</h5>
+							<label>10月 30</label>
+							<p>Lorem Ipsum 只是印刷和排版行业的虚拟文本。 自 1500 年代以来，Lorem Ipsum 一直是行业的标准虚拟文本，当时一位不知名的印刷商拿走了一个字体厨房，并把它加在一起制作了一本字体样本书。</p><a class="more" href="#" data-toggle="modal" data-target="#myModal2">Read more</a>
+							<!-- Modal-->
+							<div class="modal fade" id="myModal2" role="dialog">
+								<div class="modal-dialog">
+								<!-- Modal content-->
+									<div class="modal-content">
+										<div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal">&times;</button>
+												<h4 class="modal-title">
+												标题</h4>
+										</div>
+										<div class="modal-body">
+											<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pellentesque semper quam, quis dapibus mi sagittis nec. Donec eget dignissim orci, a scelerisque mauris. Fusce rutrum, enim a elementum condimentum, urna eros rutrum mauris, at ullamcorper odio sapien nec augue.</p>
+										</div>
+									</div>
+									<!-- //Modal content-->
+								</div>
+							</div>
+							<!-- //Modal-->
+						</div>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>
+	<!-- //news-section -->		
+		
+		<!-- testimonial -->
+	<div class="testimonial" id="w3ls-testimonials">
+		<div class="container">
+			<div class="w3-testimonial-heading">
+				<h3>评论</h3>
+				<span class="w3-line"></span>
+			</div>
+			<div class="w3agile-slider">
+				<ul class="rslides" id="slider">
+					<li>
+						<div class="w3agile-slider-grid">
+							<div class="w3agile-slider-grid-img">
+								<img src="images/mem1.jpg" alt="" />
+							</div>
+							<div class="w3agile-slider-grid-info">
+								<h5>但他接受了</h5>
+								<p>在进球刚刚好之前，足球的时机已经到来。 为了准备电弧的目标，在员工的触发器中，最大值或 少儿课程玩的很开心，选手讲故事。</p></div>
+						</div>
+					</li>
+					<li>
+						<div class="w3agile-slider-grid">
+							<div class="w3agile-slider-grid-img">
+								<img src="images/mem2.jpg" alt="" />
+							</div>
+							<div class="w3agile-slider-grid-info">								
+								<h5>马卢萨达</h5>
+								<p>在进球刚刚好之前，足球的时机已经到来。 为了准备电弧的目标，在员工的触发器中，最大值或 少儿课程玩的很开心，选手讲故事。</p></div>
+						</div>
+					</li>
+					<li>
+						<div class="w3agile-slider-grid">
+							<div class="w3agile-slider-grid-img">
+								<img src="images/mem3.jpg" alt="" />
+							</div>
+							<div class="w3agile-slider-grid-info">
+								<h5>跟随</h5>
+								<p>在进球刚刚好之前，足球的时机已经到来。 为了准备电弧的目标，在员工的触发器中，最大值或 少儿课程玩的很开心，选手讲故事。</p></div>
+						</div>
+					</li>
+				</ul>
+				<script src="js/responsiveslides.min.js"></script>
+				<script>
+						// You can also use "$(window).load(function() {"
+						$(function () {
+						  // Slideshow 4
+						  $("#slider").responsiveSlides({
+							auto: true,
+							pager:true,
+							nav:false,
+							speed: 500,
+							namespace: "callbacks",
+							before: function () {
+							  $('.events').append("<li>before event fired.</li>");
+							},
+							after: function () {
+							  $('.events').append("<li>after event fired.</li>");
+							}
+						  });
+					
+						});
+				</script>
+			</div>
+		</div>
+	</div>
+	<!-- //testimonial -->	
+		
+		<!-- contact-section -->	
+		<div class="contact-section" id="w3-contact">
+
+		
+
+
+	
+	
+				<div class="container">
+					<div class="contact-section-head text-center">
+						<h3>联系我们</h3>
+						<span></span>
+					</div>
+					<div class="agileits-map">
+						<iframe style="height:100%;width:100%" src="https://static-maps.yandex.ru/1.x/?ll=27.54750,53.892930&amp;size=650,450&amp;z=16&amp;l=map&amp;pt=27.54750,53.892930,pmwtm1~27.54750,53.892930,pmwtm66"></iframe>
+					</div>
+					<div class="w3l-contact-form-bottom">
+						<div class="col-md-4 w3ls-address">
+							<address>
+								<strong>地址 :</strong>
+								<p>公路旅行公司</p>
+								<p>1st cross Road. Ave., R10/R18</p>
+								<p class="bottom">New York, MA 01234-4321 USA</p>
+								<strong><abbr title="phone">Phone :</abbr></strong>
+								<p>040 561234999</p>
+							</address>
+						</div>
+						<form action="#" method="get">
+							<div class="col-md-4 w3l-contact-form">
+								<div class="w3l-contact-form-row">
+									<div>
+										<span>名字</span>
+										<input type="text" class="text" placeholder="" required="required" />
+									</div>
+									<div>
+										<span>邮箱</span>
+										<input type="email" class="text" placeholder="" required="required" />
+									</div>
+									<div>
+										<span>电话</span>
+										<input type="text" class="text" placeholder="" required="required" />
+									</div>
+									<div class="clearfix"> </div>
+								</div>
+							</div>
+							<div class="col-md-4 w3l-contact-form-row comments">
+								<div>
+									<span>备注</span>
+									<textarea onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}"></textarea>
+								</div>
+								<input type="submit" value="Submit" />
+							</div>
+						<div class="clearfix"></div>				
+					</form>
+				</div>
+			</div>
+		</div>
+		<!-- //contact-section -->
+		
+	<!-- footer-section -->		
+		<footer>
+			<div class="container">
+				<div class="w3ls-icons">
+					<a href="#" title="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+					<a href="#" title="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+					<a href="#" title="google-plus"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+					<a href="#" title="linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+				</div>
+				<div class="copyright">
+					</div>
+				<div class="clearfix"></div>
+			</div>
+		</footer>
+	<!-- footer-section -->		
+	
+	<!-- here stars scrolling icon -->
+			<script type="text/javascript">
+				$(document).ready(function() {
+					/*
+						var defaults = {
+						containerID: 'toTop', // fading element id
+						containerHoverID: 'toTopHover', // fading element hover id
+						scrollSpeed: 1200,
+						easingType: 'linear' 
+						};
+					*/
+										
+					$().UItoTop({ easingType: 'easeOutQuart' });
+										
+					});
+			</script>
+			<!-- start-smoth-scrolling -->
+			<script type="text/javascript" src="js/move-top.js"></script>
+			<script type="text/javascript" src="js/easing.js"></script>
+			<script type="text/javascript">
+				jQuery(document).ready(function($) {
+					$(".scroll").click(function(event){		
+						event.preventDefault();
+						$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+					});
+				});
+			</script>
+			<!-- start-smoth-scrolling -->
+		<!-- //here ends scrolling icon -->	
+</body>
+</html>
